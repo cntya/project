@@ -18,7 +18,7 @@
                             <td>{{ $a->cover }}</td>
 
                             <td>
-                                <a href="" class="btn btn-primary">Hapus</a>
+                            <a href="/about/hapus/{{ $a->id }}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>
                         @endforeach

@@ -17,8 +17,8 @@ class CreateBannersTable extends Migration
             $table->id();
             $table->string ('headline')->nullable();
             $table->string ('desc')->nullable();
-            $table->integer ('urutan');
             $table->string ('gambar');
+            $table->integer ('urutan');
             $table->timestamps();
         });
     }

@@ -1,4 +1,5 @@
 <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: rgb(54, 168, 54);">
+<marquee class="text-white">MTs Al Makmur Parungpanjang Kab. Bogor</marquee>
   <!-- Left navbar links -->
   <ul class="navbar-nav">
       {{-- <li class="nav-item">

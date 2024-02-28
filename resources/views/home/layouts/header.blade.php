@@ -9,7 +9,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
       <div class="container">
         <img src={{asset('img/logo.png')}} class="img-fluid" style="width: 50px; border-radius:50%">
-        <a class="navbar-brand">            MTs Al Makmur</a>
+        <a class="navbar-brand">MTs Al Makmur</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

@@ -150,17 +150,20 @@ Route::get('/admin/banner', 'App\Http\Controllers\UserController@indexB');
 Route::get('/admin/banner/create', 'App\Http\Controllers\UserController@tambahB');
 Route::post('/admin/banner/create', 'App\Http\Controllers\UserController@simpanB');
 Route::post('/banner/simpan','App\Http\Controllers\UserController@simpanB');
+Route::get('/banner/hapus/{id}', 'App\Http\Controllers\AdminBannerController@hapus1');
+
 
 //service
 Route::get('/admin/service', 'App\Http\Controllers\AdminServiceController@indexS');
 Route::get('/admin/service/create', 'App\Http\Controllers\AdminServiceController@tambahS');
 Route::post('/service/simpan','App\Http\Controllers\AdminServiceController@simpanS');
+Route::get('/service/hapus/{id}', 'App\Http\Controllers\AdminServiceController@hapus2');
 
 //about
 Route::get('/admin/about', 'App\Http\Controllers\AdminAboutController@indexA');
 Route::get('/admin/about/create', 'App\Http\Controllers\AdminAboutController@tambahA');
 Route::post('/about/simpan','App\Http\Controllers\AdminAboutController@simpanA');
-
+Route::get('/about/hapus/{id}', 'App\Http\Controllers\AdminAboutController@hapus3');
 //kategori
 Route::get('/posts/kategori', 'App\Http\Controllers\AdminKategoriController@index');
 

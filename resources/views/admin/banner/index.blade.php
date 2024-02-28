@@ -9,6 +9,7 @@
                         <td>Headline</td>
                         <td>desc</td>
                         <td>Gambar</td>
+                        <td>Aksi</td>
                     </tr>
                     {{ $bannercount = 0 }}
                     @foreach ($banner as $b)
@@ -21,7 +22,7 @@
                             <td>{{ $b->gambar }}</td>
 
                             <td>
-                                <a href="" class="btn btn-primary">Hapus</a>
+                            <a href="/banner/hapus/{{ $b->id }}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>
                     @endforeach

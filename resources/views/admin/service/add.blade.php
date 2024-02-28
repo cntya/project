@@ -20,12 +20,10 @@
                     <div class="form-group">
                         <label for=""><b>Deskripsi</b></label>
                     <textarea name="desc" id="content" cols="30" rows="10"></textarea>
-
+                    </div>
                     <button type="submit" class="btn btn-primary"> Simpan</button>
 
                 </form>
-            </div>
-        </div>
     </div>
 </div>
 <script>

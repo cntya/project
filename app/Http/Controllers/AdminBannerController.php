@@ -80,10 +80,10 @@ class AdminBannerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+    public function hapus1($id){
+		DB::table('banners')->where('id',$id)->delete();
+		return redirect('/admin/banner');
+	}
 
     /**
      * Show the form for editing the specified resource.

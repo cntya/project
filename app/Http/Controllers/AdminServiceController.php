@@ -65,10 +65,10 @@ class AdminServiceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+    public function hapus2($id){
+		DB::table('services')->where('id',$id)->delete();
+		return redirect('/admin/service');
+	}
 
     /**
      * Show the form for editing the specified resource.

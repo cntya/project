@@ -21,7 +21,7 @@
                             <td>{{ $s->desc }}</td>
 
                             <td>
-                                <a href="" class="btn btn-primary">Hapus</a>
+                            <a href="/service/hapus/{{ $s->id }}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>
                     @endforeach

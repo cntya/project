@@ -42,4 +42,9 @@ class AdminAboutController extends Controller
                 return redirect('/admin/about');
             }
 }
+        public function hapus3($id){
+            DB::table('abouts')->where('id',$id)->delete();
+            return redirect('/admin/about');
+}
+
 }
