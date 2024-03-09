@@ -59,7 +59,7 @@ class UserController extends Controller
 
         $foto_name = date('Y-m-d_H-i-s') . "-" .$foto_ekstensi;
         $foto_file->move(public_path('photos'), $foto_name);
-        // dd($foto_name   );
+        dd($request->all() );
 
         DB::table('banners')-> insert([
             'headline'=>$request->headline,
