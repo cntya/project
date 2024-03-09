@@ -53,11 +53,19 @@ class UserController extends Controller
 
 	//Simpan banner
 	public function simpanB(Request $request){
+        
+        $foto_file = $request->file('gambar');
+        $foto_ekstensi = $foto_file->getClientOriginalName();
+
+        $foto_name = date('Y-m-d_H-i-s') . "-" .$foto_ekstensi;
+        $foto_file->move(public_path('photos'), $foto_name);
+        // dd($foto_name   );
+
         DB::table('banners')-> insert([
             'headline'=>$request->headline,
             'desc'=>$request->desc,
 			'urutan'=>$request->urutan,
-            'gambar'=>$request->gambar,
+            'gambar'=>$foto_name,
           ]);
 
 		return redirect('/admin/banner');

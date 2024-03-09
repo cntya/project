@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Models\User;
+
 use Illuminate\support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\SweetAlert\Facades\Alert;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Models\User;
 
 class AdminUserController extends Controller
 {
@@ -18,7 +19,7 @@ class AdminUserController extends Controller
      */
     public function authenticate(Request $request)
     {
-        // // dd($request->password);
+        // dd($request->password);
         // $oke = Hash::make('123456');
         // echo $oke;
         // exit;

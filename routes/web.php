@@ -175,4 +175,4 @@ Route::get('/posts/blog', 'App\Http\Controllers\AdminAboutController@indexA');
 Route::get('/admin/dev', 'App\Http\Controllers\DeveloperController@index');
 
 
-// Auth::routes();
+

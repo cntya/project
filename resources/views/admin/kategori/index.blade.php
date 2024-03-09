@@ -5,8 +5,8 @@
                 <a href="/admin/posts/kategori/create"class="btn btn-primary mb-3"><i class="fas fa-plus"></i>Tambah</a>
                 <table class="table">
                     <tr>
-                        <td>No</td>
-                        <td>Icon</td>
+                        <td><b>No</b></td>
+                        <td><b>Icon</b></td>
                         <td>desc</td>
                         <td>Gambar</td>
                     </tr>
