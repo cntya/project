@@ -58,11 +58,13 @@ class AdminServiceController extends Controller
                 'title'=>$request->title,
                 'icon'=>$foto_name,
                 'desc'=>$request->desc,
-                
-              ]);
+                ]);
+
     
             return redirect('/admin/service');
         }
+
+        
     }
 
     /**

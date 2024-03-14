@@ -32,10 +32,12 @@ Route::get('/about', function () {
 
 Route::get('/services', function () {
     // return view('home.index');
+    $services = DB::table('services')->get();
+    // dd($services);
     $data = [
         'content' => 'home/services/index'
     ];
-    return view('home.layouts.wrapper', $data);
+    return view('home.layouts.wrapper', $data, compact('services'));
 });
 
 Route::get('/blog', function () {

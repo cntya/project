@@ -27,5 +27,7 @@
     </div>
 </div>
 <script>
-    CKEDITOR.replace('content');
+    CKEDITOR.replace('content', {
+        autoParagraph: false
+    });
 </script>
