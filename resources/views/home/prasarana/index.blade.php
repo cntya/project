@@ -3,10 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>DATA GURU</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="datatables/jquery.dataTables.min.css">
-
+	<title>SAPRAS</title>
+	<style>
+        td {
+            border : 1px dotted #999999;
+        }
+        th {
+            border : 1px dotted #999999;
+        }
+        </style>
 </head>
 <body class="mx-4">
 <h2 a class="text-bg-success"><center>SARANA PRASARANA</center></a>
@@ -14,8 +19,8 @@
 
 	
 	<br/>
-	<table class="table table-striped table-hover mt-4 datatab">
-		<thead>
+	<table style="margin: 20px;" border="1">
+		
 		<tr>
 			<th>NO</th>
 			<th>FASILITAS</th>
@@ -62,14 +67,6 @@
             <td>PERALATAN KESENIAN</td>
             <td>MILIK SENDIRI</td>
         </tr>
-        </thead>
      </table>
 </body>
-<script src="datatables/jquery-1.12.0.min.js"></script>
-  <script src="datatables/jquery.dataTables.min.js"></script>
-  <script>
-  	$(document).ready(function(){
-  		$('.datatab').DataTable();
-  	});
-  </script>
 </html>

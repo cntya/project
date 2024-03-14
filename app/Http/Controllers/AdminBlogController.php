@@ -29,9 +29,15 @@ class AdminBlogController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        //
+    {  
+         
+        $data = [
+            'title' => 'Tambah Blog',
+            'content' => 'admin/blog/add'
+        ];
+        return view ('admin.layouts.wrapper', $data);
     }
+    
 
     /**
      * Store a newly created resource in storage.
@@ -39,9 +45,15 @@ class AdminBlogController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function SimpanBl(Request $request)
     {
-        //
+        DB::table('blogs')-> insert([
+            'title'=>$request->title,
+            'cover'=>$request->cover,
+            'body'=>$request->body,
+          ]);
+
+		return redirect('/admin/user');
     }
 
     /**
@@ -50,9 +62,14 @@ class AdminBlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function tambah($id)
     {
         //
+        $data = [
+            'title' => 'Tambah Blog',
+            'content' => 'admin/blog/add'
+        ];
+        return view ('admin.layouts.wrapper', $data);
     }
 
     /**

@@ -51,11 +51,11 @@
         <img src="/img/pak ahyani.png" width="100%" alt="">
       </div>
       <div class="col-md-6">
-       <p align="justify">Pendidikan hakikatnya ialah proses pembelajaran sebagai upaya untuk mengembangkan aktivitas dan kreativitas peserta didik dengan interaksi yang menghasilkan pengalaman belajar.
+       <p>Pendidikan hakikatnya ialah proses pembelajaran sebagai upaya untuk mengembangkan aktivitas dan kreativitas peserta didik dengan interaksi yang menghasilkan pengalaman belajar.
         Indonesia menginginkan pendidikan yang lebih baik, hal inilah yang melatar belakangi terjadinya pergantian kurikulum secara terus-menerus. 
-        Pergantian kurikulum merupakan salah satu usaha yang dilakukan negara dalam mencetak lulusan yang berkualitas dalam negara kekuasaannya maupun internasional agar sesuai dengan fungsi dan tujuan pendidikan nasional sebagaimana tercantum dalam UU No. 20 Tahun 2003.</p>
+        Pergantian kurikulum merupakan salah satu usaha yang dilakukan negara dalam mencetak lulusan yang berkualitas dalam negara kekuasaannya maupun internasional agar sesuai dengan fungsi dan tujuan pendidikan nasional sebagaimana tercantum dalam UU No. 20 Tahun 2003.
 
-        <p align="justify">Pendidikan dapat dikatakan berhasil dan mencapai tujuan jika terjadi perubahan. Perubahan tersebut ialah perubahan tingkah laku, yang memiliki beberapa aspek yaitu :</p>
+        Pendidikan dapat dikatakan berhasil dan mencapai tujuan jika terjadi perubahan. Perubahan tersebut ialah perubahan tingkah laku, yang memiliki beberapa aspek yaitu :</p>
 <ol>
         <li>Pengetahuan,</li>
         <li>Pengertian,</li>
@@ -68,10 +68,10 @@
         <li>Budi pekerti,</li>
         <li>Sikap.</li>
 </ol>
-       <p align="justify"> Dalam pendidikan siswa dituntun untuk aktif, inovatif dan kreatif dalam merespon materi. Kenyataannya guru dianggap sebagai satu-satunya sumber belajar (teaching center) yang menyebabkan siswa menjadi pasif sehingga dalam proses pembelajaran menjadi bosan.</p>
+       <p > Dalam pendidikan siswa dituntun untuk aktif, inovatif dan kreatif dalam merespon materi. Kenyataannya guru dianggap sebagai satu-satunya sumber belajar (teaching center) yang menyebabkan siswa menjadi pasif sehingga dalam proses pembelajaran menjadi bosan.</p>
         
-       <p align="justify">Pembelajaran adalah sebuah usaha mempengaruhi emosi, intelektual dan spiritual seseorang agar ingin belajar dengan kehendaknya sendiri, sedangkan belajar yaitu suatu proses yang berakhir pada perubahan.</p>
-        <p align="justify">Melihat pandangan seperti di atas kami Madrasah Tsanawiyah Almakmur hadir di tengah masyarakat untuk ikut serta dalam mewujudkan tujuan pendidikan yang sesuai dengan undang2 dan harapan masyarakat. Dan kami menawarkan kepada masyarakat dalam upaya mewujudkan semua harapan dan tujuan itu dengan mengedepankan digitalisasi dalam pelayanan dan pembelajaran terhadap siswa. Kami berharap kehadiran Madrasah Tsanawiyah Almakmur ini dapat diterima oleh masyarakat dan dapat bermanfaat guna mencetak generasi bangsa yang sesuai dengan harapan kita semua.
+       <p>Pembelajaran adalah sebuah usaha mempengaruhi emosi, intelektual dan spiritual seseorang agar ingin belajar dengan kehendaknya sendiri, sedangkan belajar yaitu suatu proses yang berakhir pada perubahan.</p>
+        <p>Melihat pandangan seperti di atas kami Madrasah Tsanawiyah Almakmur hadir di tengah masyarakat untuk ikut serta dalam mewujudkan tujuan pendidikan yang sesuai dengan undang2 dan harapan masyarakat. Dan kami menawarkan kepada masyarakat dalam upaya mewujudkan semua harapan dan tujuan itu dengan mengedepankan digitalisasi dalam pelayanan dan pembelajaran terhadap siswa. Kami berharap kehadiran Madrasah Tsanawiyah Almakmur ini dapat diterima oleh masyarakat dan dapat bermanfaat guna mencetak generasi bangsa yang sesuai dengan harapan kita semua.
        </p>
       </div>
     </div>
