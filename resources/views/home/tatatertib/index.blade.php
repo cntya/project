@@ -4,18 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DATA GURU</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="datatables/jquery.dataTables.min.css">
-
+	<style>
+        td {
+            border : 1px dotted #999999;
+        }
+        th {
+            border : 1px dotted #999999;
+        }
+        </style>
 </head>
 <body class="mx-4">
-	<h2 a class="text-bg-success"><center>TATA TERTIB</center></a>
-    <a><center>PEMAKAIAN SERAGAM </center></a>
+	<h2 a class="text-bg-success"><center>PEMAKAIAN SERAGAM</center></a>
 	<a><center>MTs Al Makmur</center></a></h2>
 
 	
 	<br/>
-	<table class="table table-striped table-hover mt-4 datatab">
+	<table class="table  style="margin: 20px;" border="1">
 		<thead>
 		<tr>
 			<th>NO</th>
@@ -51,11 +55,4 @@
         </thead>
      </table>
 </body>
-<script src="datatables/jquery-1.12.0.min.js"></script>
-  <script src="datatables/jquery.dataTables.min.js"></script>
-  <script>
-  	$(document).ready(function(){
-  		$('.datatab').DataTable();
-  	});
-  </script>
 </html>

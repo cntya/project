@@ -39,15 +39,16 @@
   </ul>
 </div>
             <li class="nav-item">
-              <a class="nav-link {{ Request::is('dataguru') ? 'menu-active' : '' }}" href="/dataguru">DTDS</a>
+              <a class="nav-link {{ Request::is('dataguru') ? 'menu-active' : '' }}" href="/dataguru">DATA GURU</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link {{ Request::is('tatatertib') ? 'menu-active' : '' }}" href="/tatatertib">TATA TERTIB</a>
+              <a class="nav-link {
+            { Request::is('tatatertib') ? 'menu-active' : '' }}" href="/tatatertib">SERAGAM</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link {{ Request::is('prasarana') ? 'menu-active' : '' }}" href="/prasarana">SARANA PRASARANA</a>
+              <a class="nav-link {{ Request::is('prasarana') ? 'menu-active' : '' }}" href="/prasarana">SAPRAS</a>
             </li>
 
             <li class="nav-item">
