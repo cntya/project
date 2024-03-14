@@ -20,15 +20,15 @@
         <img src="/img/gedung.jpg" class="img-gedung" alt="">
         </div>
 
-        
-        <div class="container">
           <div class="carousel-caption text-start">
+            <div class="bg-success">
+            <div class="container ">
             <marquee>MTs Al Makmur Parungpanjang Kab. Bogor</marquee>
-            <p>MADRASAH MANDIRI BERPRESTASI</p>
-           
+            
           </div>
+          </div>
+          
         </div>
-      </div>
 </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
