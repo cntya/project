@@ -47,10 +47,16 @@ class AdminServiceController extends Controller
      */
     public function simpanS(Request $request){
     {
+        $foto_file = $request->file('icon');
+        $foto_ekstensi = $foto_file->getClientOriginalName();
+
+        $foto_name = date('Y-m-d_H-i-s') . "-" .$foto_ekstensi;
+        $foto_file->move(public_path('pos_services'), $foto_name);
+
         // dd($request->all());
             DB::table('services')-> insert([
                 'title'=>$request->title,
-                'icon'=>$request->icon,
+                'icon'=>$foto_name,
                 'desc'=>$request->desc,
                 
               ]);

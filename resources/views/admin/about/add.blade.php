@@ -2,7 +2,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <form action="/about/simpan" method="post" enctype="multipart/form">
+                <form action="/about/simpan" method="post" enctype="multipart/form-data">
                     @csrf
 
 
@@ -19,7 +19,7 @@
 
                     <div class="form-group">
                         <label for=""><b>Cover</b></label>
-                        <input type="file" name="cover" class="" placeholder="">
+                        <input type="file" name="cover" id="cover" class="" placeholder="">
                     </div>
 
                     <button type="submit" class="btn btn-primary"> Simpan</button>

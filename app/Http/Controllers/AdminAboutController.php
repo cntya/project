@@ -32,11 +32,17 @@ class AdminAboutController extends Controller
 
     public function simpanA(Request $request){
         {
-            // dd($request->all());
+            $foto_file = $request->file('cover');
+            $foto_ekstensi = $foto_file->getClientOriginalName();
+
+            $foto_name = date('Y-m-d_H-i-s') . "-" .$foto_ekstensi;
+            $foto_file->move(public_path('pos_abouts'), $foto_name);
+
+        // dd($request->all());
                 DB::table('abouts')-> insert([
                     'name'=>$request->name,
                     'desc'=>$request->desc,
-                    'cover'=>$request->cover,
+                    'cover'=>$foto_name,
                   ]);
         
                 return redirect('/admin/about');

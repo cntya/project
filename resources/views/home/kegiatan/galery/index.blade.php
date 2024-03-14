@@ -31,7 +31,7 @@
 <div class="col-md-3 my-3">
         <div class="card shadow-sm">
             <div class="wrapper-card-blog">
-            <img src="/img/paskibra.jpg" class="img-card-blog">
+            <img src="/img/Hadroh.jpeg" class="img-card-blog">
         </div>
         <div class="p-3">
         <a href="" class="text-decoration-none"><h5><center>HADROH</center></h5></a>
@@ -65,7 +65,7 @@
 <div class="col-md-3 my-3">
         <div class="card shadow-sm">
             <div class="wrapper-card-blog">
-            <img src="/img/putsal1.jpg" class="img-card-blog">
+            <img src="/img/Voli-Pa1.jpg" class="img-card-blog">
         </div>
         <div class="p-3">
         <a href="" class="text-decoration-none"><h5><center>VOLLY PUTRA/PUTRI</center></h5></a>

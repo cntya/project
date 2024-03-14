@@ -169,7 +169,7 @@ Route::get('/posts/kategori', 'App\Http\Controllers\AdminKategoriController@inde
 
 
 //blog
-Route::get('/posts/blog', 'App\Http\Controllers\AdminAboutController@indexA');
+Route::get('admin/posts/blog', 'App\Http\Controllers\AdminBlogController@index');
 
 //dev
 Route::get('/admin/dev', 'App\Http\Controllers\DeveloperController@index');

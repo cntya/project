@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use\App\Models\Blog
+use\App\Models\Blog;
+use Illuminate\support\Facades\DB;
 use Illuminate\Http\Request;
 
 class AdminBlogController extends Controller
@@ -14,10 +15,12 @@ class AdminBlogController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Manajemen Blog'
-            'blog' => Blogs::get(),
-            'content' => 'admin/blog/index'
-        ]
+        
+            'title'=>'Manajemen blog',
+            'service'=>DB::table('blogs')->get(),
+            'content' => 'admin/posts/index'
+        ];
+        return view ('admin.layouts.wrapper', $data);
     }
 
     /**
