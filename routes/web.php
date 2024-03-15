@@ -178,5 +178,5 @@ Route::get('admin/posts/tambah', 'App\Http\Controllers\AdminBlogController@tamba
 //dev
 Route::get('/admin/dev', 'App\Http\Controllers\DeveloperController@index');
 
-
-
+//seragam
+Route::get('/home/tatatertib', 'App\Http\Controllers\SeragamController@index');

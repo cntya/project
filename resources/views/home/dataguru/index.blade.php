@@ -23,9 +23,9 @@
 	<table style="margin: 20px;" border="1">
 		
 		<tr>
-			<th>No</th>
-			<th>NAMA LENGKAP</th>
-			<th>JABATAN</th>      			
+			<th><center>No</center></th>
+			<th><center>NAMA LENGKAP</center></th>
+			<th><center>JABATAN</center></th>      			
 		</tr>
     
         <tr>

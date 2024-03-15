@@ -1,58 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>DATA GURU</title>
-	<style>
-        td {
-            border : 1px dotted #999999;
-        }
-        th {
-            border : 1px dotted #999999;
-        }
-        </style>
-</head>
-<body class="mx-4">
-	<h2 a class="text-bg-success"><center>PEMAKAIAN SERAGAM</center></a>
-	<a><center>MTs Al Makmur</center></a></h2>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <a href="/admin/seragam/create"class="btn btn-primary mb-3"><i class="fas fa-plus"></i>Tambah</a>
+                <table class="table">
+                    <tr>
+                        <td>Hari</td>
+                        <td>Pakaian</td>
+                        <td>Aksi</td>
+                    </tr>
+                    @foreach ($seragam as $r)
+                        <tr>
+                           
+                            <td>{{ $r->hari }}</td>
+                            <td>{{ $r->pakaian }}</td>
 
-	
-	<br/>
-	<table class="table  style="margin: 20px;" border="1">
-		<thead>
-		<tr>
-			<th>NO</th>
-			<th>HARI</th>
-			<th>KETERANGAN</th>
-      			
-		</tr>
-        <tr>
-            <td>1</td>
-            <td>SENIN-SELASA</td>
-            <td>PUTIH-BIRU</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>RABU</td>
-            <td>BATIK</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>KAMIS</td>
-            <td>PRAMUKA</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>JUM'AT</td>
-            <td>BAJU MUSLIM</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>SABTU</td>
-            <td>PRAMUKA</td>
-        </tr>
-        </thead>
-     </table>
-</body>
-</html>
+
+                            <td>
+                            <a href="/seragam/hapus/{{ $r->id }}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        @endforeach
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</div>

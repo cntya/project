@@ -22,9 +22,9 @@
 	<table style="margin: 20px;" border="1">
 		
 		<tr>
-			<th>NO</th>
-			<th>FASILITAS</th>
-			<th>KETERANGAN</th>
+			<th><center>NO</center></th>
+			<th><center>FASILITAS</center></th>
+			<th><center>KETERANGAN</center></th>
       			
 		</tr>
         <tr>
