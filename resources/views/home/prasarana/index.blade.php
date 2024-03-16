@@ -1,72 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SAPRAS</title>
-	<style>
-        td {
-            border : 1px dotted #999999;
-        }
-        th {
-            border : 1px dotted #999999;
-        }
-        </style>
-</head>
-<body class="mx-4">
-<h2 a class="text-bg-success"><center>SARANA PRASARANA</center></a>
-	<a><center>MTs Al Makmur</center></a></h2>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <a href="/admin/seragam/create"class="btn btn-primary mb-3"><i class="fas fa-plus"></i>Tambah</a>
+                <table class="table">
+                    <tr>
+                        <td>No</td>
+                        <td>Fasilitas</td>
+                        <td>Keterangan</td>
+                        <td>Aksi</td>
+                    </tr>
+                    @foreach ($sapras as $s)
+                        <tr>
+                           
+                            <td>{{ $s->fasilitas }}</td>
+                            <td>{{ $s->keterangan }}</td>
 
-	
-	<br/>
-	<table style="margin: 20px;" border="1">
-		
-		<tr>
-			<th><center>NO</center></th>
-			<th><center>FASILITAS</center></th>
-			<th><center>KETERANGAN</center></th>
-      			
-		</tr>
-        <tr>
-            <td>1</td>
-            <td>GEDUNG BELAJAR</td>
-            <td>MILIK SENDIRI</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>KANTOR</td>
-            <td>MILIK SENDIRI</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>RUANG GURU</td>
-            <td>MILIK SENDIRI</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>LAB. KOMPUTER</td>
-            <td>MILIK SENDIRI</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>LAPANGAN OLAHRAGA</td>
-            <td>MILIK SENDIRI</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>PERALATAN MARCHING BAND</td>
-            <td>MILIK SENDIRI</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>PERALATAN OLAHRAGA</td>
-            <td>MILIK SENDIRI</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>PERALATAN KESENIAN</td>
-            <td>MILIK SENDIRI</td>
-        </tr>
-     </table>
-</body>
-</html>
+
+                            <td>
+                            <a href="/seragam/hapus/{{ $s->id }}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        @endforeach
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</div>

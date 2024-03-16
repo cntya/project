@@ -59,26 +59,29 @@ Route::get('/galery', function () {
 
 Route::get('/dataguru', function () {
     // return view('home.index');
+    $guru = DB::table('data_guru')->get(); // Mendapatkan data seragam
     $data = [
         'content' => 'home/dataguru/index'
     ];
-    return view('home.layouts.wrapper', $data);
+    return view('home.layouts.wrapper', $data, compact('guru'));
 });
 
 Route::get('/tatatertib', function () {
     // return view('home.index');
+    $seragam = DB::table('seragam')->get(); // Mendapatkan data tatatertib
     $data = [
         'content' => 'home/tatatertib/index'
     ];
-    return view('home.layouts.wrapper', $data);
+    return view('home.layouts.wrapper', $data, compact('seragam'));
 });
 
 Route::get('/prasarana', function () {
     // return view('home.index');
+    $sapras = DB::table('sapras')->get(); // Mendapatkan data sapras
     $data = [
         'content' => 'home/prasarana/index'
     ];
-    return view('home.layouts.wrapper', $data);
+    return view('home.layouts.wrapper', $data, compact('sapras'));
 });
 
 Route::get('/contact', function () {
@@ -180,3 +183,5 @@ Route::get('/admin/dev', 'App\Http\Controllers\DeveloperController@index');
 
 //seragam
 Route::get('/home/tatatertib', 'App\Http\Controllers\SeragamController@index');
+// Route::get('/tatatertib/tambah', 'App\Http\Controllers\SeragamController@tambah');
+// Route::post('/tatatertib/simpan','App\Http\Controllers\SeragamController@simpan');
