@@ -145,14 +145,14 @@
     
    </div>
    <div class="text-center mt-3">
-    <a href="" class="btn btn-success px-5">selengkapnya <i class="fas fa-arrow-right"></i></a>
+    <a href="/about" class="btn btn-success px-5">selengkapnya <i class="fas fa-arrow-right"></i></a>
    </div>
 </div>
 
 
 <div class="bg-success my-5">
     <div class="container py-5">
-      <div class="text-dark text-center">
+      <div class="text-white text-center">
       <h5>Pelajari tentang kami!!</h5>
       <p>Madrasah MANDIRI Berprestasi</p>
 
@@ -260,6 +260,6 @@
     <div class="text-center">
     <h4 class="text-center">Contact</h4>
     <p>Ada Yang Bisa Kami Bantu</p>
-    <a href="" class="btn btn-success px-5" target="blank"><i class="fas fa-phone"></i>Contact Kami di Whatshap</a>
+    <a href="https://wa.me/6281283119746" class="btn btn-success px-5" target="blank"><i class="fas fa-phone"></i>Contact Kami di Whatshap</a>
     </div>
   </div>

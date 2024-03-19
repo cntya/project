@@ -43,8 +43,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link {
-            { Request::is('tatatertib') ? 'menu-active' : '' }}" href="/tatatertib">SERAGAM</a>
+              <a class="nav-link {{ Request::is('tatatertib') ? 'menu-active' : '' }}" href="/tatatertib">SERAGAM</a>
             </li>
 
             <li class="nav-item">

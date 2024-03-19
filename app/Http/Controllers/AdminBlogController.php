@@ -8,20 +8,31 @@ use Illuminate\Http\Request;
 class AdminBlogController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resource. 
+     * 
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $data = [
-        
-            'title'=>'Manajemen blog',
-            'service'=>DB::table('blogs')->get(),
-            'content' => 'admin/posts/index'
-        ];
-        return view ('admin.layouts.wrapper', $data);
-    }
+    // public function showBlog($id)
+    // {
+    //     $blog = blogs::find($id); // Mendapatkan data blog berdasarkan ID
+    //     return view('blog.show', compact('blog')); // Meneruskan data blog ke tampilan 'show.blade.php'
+    // // }
+
+     public function index()
+         {
+            // $blog = DB::table('blogs')->get(); // Mendapatkan data seragam
+            // dd($seragam);
+            // return view('admin.posts.index');
+            $blog= [
+
+                'title'=>'Manajemen Service',
+                'blog'=>DB::table('blogs')->get(),
+                'content' => 'admin/posts/index'
+            ];
+            return view ('admin.layouts.wrapper', $blog);
+        }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -62,12 +73,12 @@ class AdminBlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function tambah($id)
+    public function tambah()
     {
         //
         $data = [
             'title' => 'Tambah Blog',
-            'content' => 'admin/blog/add'
+            'content' => 'admin/posts/add'
         ];
         return view ('admin.layouts.wrapper', $data);
     }
