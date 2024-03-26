@@ -185,3 +185,6 @@ Route::get('/admin/dev', 'App\Http\Controllers\DeveloperController@index');
 Route::get('/home/tatatertib', 'App\Http\Controllers\SeragamController@index');
 // Route::get('/tatatertib/tambah', 'App\Http\Controllers\SeragamController@tambah');
 // Route::post('/tatatertib/simpan','App\Http\Controllers\SeragamController@simpan');
+
+//kategori
+Route::get('admin/posts/kategori','App\Http\Controllers\AdminKategoriController@index');
