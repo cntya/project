@@ -169,14 +169,15 @@ Route::get('/admin/about', 'App\Http\Controllers\AdminAboutController@indexA');
 Route::get('/admin/about/create', 'App\Http\Controllers\AdminAboutController@tambahA');
 Route::post('/about/simpan','App\Http\Controllers\AdminAboutController@simpanA');
 Route::get('/about/hapus/{id}', 'App\Http\Controllers\AdminAboutController@hapus3');
+
 //kategori
 Route::get('/posts/kategori', 'App\Http\Controllers\AdminKategoriController@index');
 
 
 //blog
-Route::get('admin/posts/blog', 'App\Http\Controllers\AdminBlogController@index');
+Route::get('admin/posts/blog','App\Http\Controllers\AdminBlogController@index');
 Route::post('admin/posts/simpan','App\Http\Controllers\AdminBlogController@simpanBl');
-Route::get('admin/posts/tambah', 'App\Http\Controllers\AdminBlogController@tambah');
+Route::get('admin/posts/add','App\Http\Controllers\AdminBlogController@tambah');
 
 //dev
 Route::get('/admin/dev', 'App\Http\Controllers\DeveloperController@index');
