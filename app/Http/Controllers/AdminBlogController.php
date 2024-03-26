@@ -19,8 +19,13 @@ class AdminBlogController extends Controller
     //     return view('blog.show', compact('blog')); // Meneruskan data blog ke tampilan 'show.blade.php'
     // // }
 
+<<<<<<< HEAD
     public function index()
         {
+=======
+     public function index()
+         {
+>>>>>>> 25061665da8024d50467bce07b26fd6ac04e4d30
             // $blog = DB::table('blogs')->get(); // Mendapatkan data seragam
             // dd($seragam);
             // return view('admin.posts.index');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use\App\Models\Kategori;
+use Illuminate\support\Facades\DB;
 use Illuminate\Http\Request;
 
 class AdminKategoriController extends Controller
@@ -17,7 +18,7 @@ class AdminKategoriController extends Controller
         
             'title'=>'Manajemen Kategori',
             'about'=>DB::table('kategoris')->get(),
-            'content' => 'admin/posts/kategori/index'
+            'content' => 'admin/blog/index'
         ];
         // dd($data);
         return view ('admin.layouts.wrapper', $data);
