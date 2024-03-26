@@ -19,8 +19,13 @@ class AdminBlogController extends Controller
     //     return view('blog.show', compact('blog')); // Meneruskan data blog ke tampilan 'show.blade.php'
     // // }
 
+<<<<<<< HEAD
+    public function index()
+        {
+=======
      public function index()
          {
+>>>>>>> 25061665da8024d50467bce07b26fd6ac04e4d30
             // $blog = DB::table('blogs')->get(); // Mendapatkan data seragam
             // dd($seragam);
             // return view('admin.posts.index');
@@ -41,7 +46,7 @@ class AdminBlogController extends Controller
      */
     public function create()
     {  
-         
+        
         $data = [
             'title' => 'Tambah Blog',
             'content' => 'admin/blog/add'
@@ -62,7 +67,7 @@ class AdminBlogController extends Controller
             'title'=>$request->title,
             'cover'=>$request->cover,
             'body'=>$request->body,
-          ]);
+        ]);
 
 		return redirect('/admin/blog');
     }
@@ -115,5 +120,5 @@ class AdminBlogController extends Controller
     public function destroy($id)
     {
         //
-    }
+        }
 }

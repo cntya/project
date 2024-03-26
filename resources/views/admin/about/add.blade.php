@@ -10,8 +10,8 @@
 
                     <div class="form-group">
                         <label for=""><b>Name</b></label>
-                        <input type="text" name="name"
-                            class="form-control @error('headline') is-invalid @enderror" placeholder="headline">
+                        <input type="text" name="name" class="form-control @error('headline') is-invalid @enderror"
+                            placeholder="headline">
                     </div>
 
                     <div class="form-group">

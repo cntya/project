@@ -1,8 +1,8 @@
         <div class="card">
             <div class="card-body">
-                
-            {{--CKEditor--}}
-            <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
+                {{-- CKEditor --}}
+                <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
                 <form action="/service/simpan" method="post" enctype="multipart/form-data">
                     @csrf
 
@@ -18,16 +18,16 @@
 
                     <div class="form-group">
                         <label for=""><b>Deskripsi</b></label>
-                    <textarea name="desc" id="content" cols="30" rows="10"></textarea>
+                        <textarea name="desc" id="content" cols="30" rows="10"></textarea>
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary"> Simpan</button>
 
                 </form>
-    </div>
-</div>
-<script>
-    CKEDITOR.replace('content', {
-        autoParagraph: false
-    });
-</script>
+            </div>
+        </div>
+        <script>
+            CKEDITOR.replace('content', {
+                autoParagraph: false
+            });
+        </script>

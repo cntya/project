@@ -5,10 +5,10 @@
                 <a href="/admin/service/create"class="btn btn-primary mb-3"><i class="fas fa-plus"></i>Tambah</a>
                 <table class="table">
                     <tr>
-                        <td>No</td>
-                        <td>Icon</td>
-                        <td>desc</td>
-                        <td>Gambar</td>
+                        <td><b>No</b></td>
+                        <td><b>Icon</b></td>
+                        <td><b>Desc</b></td>
+                        <td><b>Gambar</b></td>
                     </tr>
                     {{-- {{ $bannercount = 0 }} --}}
                     @foreach ($service as $s)

@@ -169,6 +169,7 @@ Route::get('/admin/about', 'App\Http\Controllers\AdminAboutController@indexA');
 Route::get('/admin/about/create', 'App\Http\Controllers\AdminAboutController@tambahA');
 Route::post('/about/simpan','App\Http\Controllers\AdminAboutController@simpanA');
 Route::get('/about/hapus/{id}', 'App\Http\Controllers\AdminAboutController@hapus3');
+
 //kategori
 Route::get('/posts/kategori', 'App\Http\Controllers\AdminKategoriController@index');
 
