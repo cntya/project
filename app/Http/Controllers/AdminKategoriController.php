@@ -14,14 +14,14 @@ class AdminKategoriController extends Controller
      */
     public function index()
     {
-        $data = [
+        $kategori = [
         
             'title'=>'Manajemen Kategori',
-            'about'=>DB::table('kategoris')->get(),
-            'content' => 'admin/blog/index'
+            'kategori'=>DB::table('kategoris')->get(),
+            'content' => 'admin/posts/kategori/index'
         ];
         // dd($data);
-        return view ('admin.layouts.wrapper', $data);
+        return view ('admin.layouts.wrapper', $kategori);
     }
     
 
@@ -32,7 +32,12 @@ class AdminKategoriController extends Controller
      */
     public function create()
     {
-        //
+     
+        $data = [
+            'title' => 'Tambah Blog',
+            'content' => 'admin/posts/add'
+        ];
+        return view ('admin.layouts.wrapper', $data);
     }
 
     /**
@@ -41,10 +46,19 @@ class AdminKategoriController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function tambah()
     {
+       
         //
+        $data = [
+            
+            'title' => 'Tambah Kategori',
+            'content' => 'admin/posts/kategori/add'
+        ];
+        return view ('admin.layouts.wrapper', $data);
     }
+
+    
 
     /**
      * Display the specified resource.
@@ -52,9 +66,13 @@ class AdminKategoriController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function simpan(Request $request)
     {
-        //
+        DB::table('kategoris')-> insert([
+            'name'=>$request->name,
+          ]);
+
+		return redirect('/admin/posts/kategori');
     }
 
     /**
@@ -63,10 +81,10 @@ class AdminKategoriController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
-    }
+    public function hapus($id){
+        DB::table('kategoris')->where('id',$id)->delete();
+        return redirect('/admin/posts/kategori');
+}
 
     /**
      * Update the specified resource in storage.

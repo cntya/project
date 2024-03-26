@@ -8,20 +8,18 @@
                         <thead>
                             <tr>
                                 <th class="font-weight-bold">No</th>
-                                <th class="font-weight-bold">Title</th>
-                                <th class="font-weight-bold">Cover</th>
-                                <th class="font-weight-bold">Body</th>
+                                <th class="font-weight-bold">Name</th>
                                 <th class="font-weight-bold">Opsi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($data as $k)
+                            @foreach($kategori as $k)
                             <tr>
-                                <td>{{$k->title}}</td>
-                                <td>{{$k->cover}}</td>
-                                <td>{{$k->body}}</td>
+                                <td>{{$k->id}}</td>
+                                <td>{{$k->name}}</td>
+                                
                                 <td>
-                                    <a href="/user/hapus/{{ $k->id }}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                                    <a href="/kategori/hapus/{{ $k->id }}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                                 </td>
                             </tr>
                             @endforeach

@@ -17,11 +17,12 @@
                         <tbody>
                             @foreach($blog as $p)
                             <tr>
+                                <td>{{$p->id}}</td>
                                 <td>{{$p->title}}</td>
                                 <td>{{$p->cover}}</td>
                                 <td>{{$p->body}}</td>
                                 <td>
-                                    <a href="/user/hapus/{{ $p->id }}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                                    <a href="/blog/hapus/{{ $p->id }}" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                                 </td>
                             </tr>
                             @endforeach

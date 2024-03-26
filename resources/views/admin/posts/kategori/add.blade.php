@@ -2,11 +2,11 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <form action="/blog/simpan" method="POST">
+                <form action="/kategori/simpan" method="POST">
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <label for=""><b>Title</b></label>
-                        <input type="text" name="title" class="form-control @error('name') is-invalid @enderror"
+                        <label for=""><b>Username</b></label>
+                        <input type="text" name="name" class="form-control @error('name') is-invalid @enderror"
                             placeholder="Username">
                         @error('name')
                             <div class="invalid-feedback">
@@ -16,13 +16,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label for=""><b>Cover</b></label>
-                        <input type="text" name="cover" class="form-control" id="editor-container" placeholder="Username">
+                        <label for=""><b>Email</b></label>
+                        <input type="email" name="email" class="form-control" id="editor-container" placeholder="Username">
                     </div>
 
                     <div class="form-group">
-                        <label for=""><b>Body</b></label>
-                        <input type="text" name="body" class="form-control" placeholder="">
+                        <label for=""><b>Password</b></label>
+                        <input type="password" name="password" class="form-control" placeholder="">
                     </div>
 
                     <button type="submit" class="btn btn-primary"> Simpan</button>

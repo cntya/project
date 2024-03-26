@@ -64,7 +64,7 @@ class AdminBlogController extends Controller
             'body'=>$request->body,
           ]);
 
-		return redirect('/admin/user');
+		return redirect('/admin/blog');
     }
 
     /**
@@ -77,7 +77,7 @@ class AdminBlogController extends Controller
     {
         //
         $data = [
-            'title' => 'Tambah Blog',
+            'title' => 'Tambah Service',
             'content' => 'admin/posts/add'
         ];
         return view ('admin.layouts.wrapper', $data);
@@ -89,10 +89,10 @@ class AdminBlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
-    }
+    public function hapus($id){
+        DB::table('blogs')->where('id',$id)->delete();
+        return redirect('/admin/posts/blog');
+}
 
     /**
      * Update the specified resource in storage.

@@ -49,7 +49,7 @@
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-file"></i>
                                 <p>
-                                    Blog
+                                    Kategori
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
@@ -57,13 +57,13 @@
                                 <li class="nav-item">
                                     <a href="/admin/posts/blog" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Blog</p>
+                                        <p>Ekstrakulikuler</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/admin/posts/kategori" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Kategori</p>
+                                        <p>Galery</p>
                                     </a>
                                 </li>
                             </ul>
@@ -73,7 +73,7 @@
                             <a href="/admin/about" class="nav-link {{ Request::is('admin/about*') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-calendar"></i>
                                 <p>
-                                    About
+                                   Visi dan Misi
                                     {{-- <span class="right badge badge-danger">New</span> --}}
                                 </p>
                             </a>
@@ -85,7 +85,7 @@
                                 class="nav-link {{ Request::is('admin/service*') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-list"></i>
                                 <p>
-                                    Services
+                                    Prestasi
                                     {{-- <span class="right badge badge-danger">New</span> --}}
                                 </p>
                             </a>

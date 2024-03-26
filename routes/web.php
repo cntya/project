@@ -175,8 +175,9 @@ Route::get('/posts/kategori', 'App\Http\Controllers\AdminKategoriController@inde
 
 //blog
 Route::get('admin/posts/blog','App\Http\Controllers\AdminBlogController@index');
-Route::post('admin/posts/simpan','App\Http\Controllers\AdminBlogController@simpanBl');
-Route::get('admin/posts/add','App\Http\Controllers\AdminBlogController@tambah');
+Route::post('/blog/simpan','App\Http\Controllers\AdminBlogController@simpanBl');
+Route::get('admin/blog/create','App\Http\Controllers\AdminBlogController@tambah');
+Route::get('/blog/hapus/{id}', 'App\Http\Controllers\AdminBlogController@hapus');
 
 //dev
 Route::get('/admin/dev', 'App\Http\Controllers\DeveloperController@index');
@@ -186,5 +187,8 @@ Route::get('/home/tatatertib', 'App\Http\Controllers\SeragamController@index');
 // Route::get('/tatatertib/tambah', 'App\Http\Controllers\SeragamController@tambah');
 // Route::post('/tatatertib/simpan','App\Http\Controllers\SeragamController@simpan');
 
-//kategori
+//adminkategori
 Route::get('admin/posts/kategori','App\Http\Controllers\AdminKategoriController@index');
+Route::post('kategori/simpan', 'App\Http\Controllers\AdminKategoriController@simpan'); // Memperbaiki penulisan method simpan
+Route::get('admin/kategori/create','App\Http\Controllers\AdminKategoriController@tambah'); // Memperbaiki penulisan rute untuk menambah kategori
+Route::get('/kategori/hapus/{id}', 'App\Http\Controllers\AdminKategoriController@hapus');
