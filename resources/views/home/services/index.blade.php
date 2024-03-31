@@ -12,7 +12,7 @@
                 <div class="card-footer" style="align-self: center;"> <!-- Tambahkan kelas card-footer dan atur align-self: center; -->
                     <!-- Tambahkan tombol atau teks tambahan di sini -->
                 </div>
-            </div>
+            </div>    
         </div>
     @endforeach
 </div>

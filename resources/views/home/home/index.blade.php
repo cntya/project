@@ -160,7 +160,7 @@
                     <p>Peraturan MTs Al Makmur Parungpanjang</p>
                 </div>
             </div>
-
+</div>
 
 
         </div>
@@ -168,6 +168,7 @@
             <a href="" class="btn btn-success px-5">selengkapnya <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
+</div>
 
 
     <div class="bg-success my-5">
@@ -190,7 +191,7 @@
             width: 100%;
         }
     </style>
-    <div class="container my-2">
+    <!-- <div class="container my-2">
         <div class="text-center mt-5">
             <h4 class="text-center">Prestasi</h4>
             <p>Apakah anda tahu MTs Al Makmur?</p>
@@ -198,7 +199,6 @@
     </div>
 
     <div class="row">
-<<<<<<< HEAD
         <div class="col-md-3">
             <div class="card shadow-sm">
                 <div class="wrapper-card-blog">
@@ -213,8 +213,9 @@
                         <a href="">selengkapnya &RightArrow;</a>
                 </div>
             </div>
-=======
-      <div class="col-md-5">
+    </div> -->
+
+      <!-- <div class="col-md-5">
         <img src="/img/pak ahyani.png" width="100%" alt="">
       </div>
       <div class="col-md-6">
@@ -243,9 +244,9 @@
       </div>
     </div>
    
-  </div>
+  </div> -->
 
-  <div class="bg-success my-3">
+  <!-- <div class="bg-success my-3">
     <div class="container py-3">
       <div class="text-white">
       <h5><center>Pelajari tentang kami!!</center></h5>
@@ -279,8 +280,8 @@
 
     <div class="col-md-2">
     <div class="text-center">
-    <i class="fa-solid fa-graduation-cap"></i>
-      <h5><b>PRESTASI</b></h5>
+    <i class="fa-solid fa-graduation-cap"></i> -->
+      <!-- <h5><b>PRESTASI</b></h5>
       <p>Prestasi yang pernah di raih oleh MTs Al Makmur</p>
       
     </div>
@@ -314,10 +315,10 @@
    <div class="text-center mt-3">
     <a href="/about" class="btn btn-success px-5">selengkapnya <i class="fas fa-arrow-right"></i></a>
    </div>
-</div>
+</div> -->
 
 
-<div class="bg-success my-5">
+<!-- <div class="bg-success my-5">
     <div class="container py-5">
       <div class="text-white text-center">
       <h5>Pelajari tentang kami!!</h5>
@@ -325,7 +326,7 @@
 
     </div>
 </div>
-</div>
+</div> -->
 <style>
   .wrapper-card-blog{
     width: 100%;
@@ -349,8 +350,17 @@
       <div class="card shadow-sm">
         <div class="wrapper-card-blog">
           <img src="/img/garuda2.jpg" class="img-card-blog" alt="">
->>>>>>> 25061665da8024d50467bce07b26fd6ac04e4d30
         </div>
+        <div class="p-3">
+                    <a href="" class="text-decoration-none">
+                        <h5>PASKIBRA<a></h5>
+                        <p>
+                            Juara Purwa 3 LKBB Lasastra 7 Tahun 2023
+                        </p>
+                        <a href="">selengkapnya &RightArrow;</a>
+                </div>
+</div>
+</div>
         <div class="col-md-3">
             <div class="card shadow-sm">
                 <div class="wrapper-card-blog">
@@ -409,22 +419,20 @@
         <div class="text-white text-center">
             <h5>Pelajari tentang kami!!</h5>
             <p>Madrasah MANDIRI Berprestasi</p>
-
         </div>
     </div>
 </div>
 
 <div class="container my-2 mb-2">
     <div class="text-center">
-<<<<<<< HEAD
-        <h4 class="text-center">Contact</h4>
+        <!-- <h4 class="text-center">Contact</h4>
         <p>Ada Yang Bisa Kami Bantu</p>
         <a href="" class="btn btn-success px-5" target="blank"><i class="fas fa-phone"></i>Contact Kami di
-            Whatshap</a>
-=======
+            Whatshap</a> -->
+
     <h4 class="text-center">Contact</h4>
     <p>Ada Yang Bisa Kami Bantu</p>
     <a href="https://wa.me/6281283119746" class="btn btn-success px-5" target="blank"><i class="fas fa-phone"></i>Contact Kami di Whatshap</a>
->>>>>>> 25061665da8024d50467bce07b26fd6ac04e4d30
+
     </div>
 </div>

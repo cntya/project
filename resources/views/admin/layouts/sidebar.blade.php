@@ -35,15 +35,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="../widgets.html" class="nav-link">
-                                <i class="nav-icon fas fa-envelope"></i>
-                                <p>
-                                    Saran
-                                    {{-- <span class="right badge badge-danger">New</span> --}}
-                                </p>
-                            </a>
-                        </li>
+                        
 
                         <li class="nav-item">
                             <a href="#" class="nav-link">
@@ -112,10 +104,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="/admin/dev" class="nav-link {{ Request::is('admin/dev*') ? 'active' : '' }}">
-                                <i class="nav-icon fas fa-cog"></i>
+                            <a href="/widgets.html" class="nav-link {{ Request::is('admin/info*') ? 'active' : '' }}">
+                            <i class="nav-icon fas fa-exclamation-circle"></i>
+
                                 <p>
-                                    Developer
+                                   Info
                                     {{-- <span class="right badge badge-danger">New</span> --}}
                                 </p>
                             </a>
